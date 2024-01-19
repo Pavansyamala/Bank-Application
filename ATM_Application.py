@@ -44,7 +44,7 @@ class ATM :
         user_name = input("Enter your Name : ")
         phonenumber = input("Enter phone number for your registration : ")
         password = input("Choose Your Passord : ")
-        balance = 54000
+        balance = 500
         self.cursor.execute(
             'INSERT INTO db.Customer_Details(name, phonenumber, password, balance) VALUES (%s, %s, %s, %s)',
             (user_name, phonenumber, password, balance)
